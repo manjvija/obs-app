@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: obs-app
-          image: <YOUR_DOCKERHUB_USERNAME>/obs-app:latest
+          image: manjvija/obs-app:latest
           ports:
             - containerPort: 3000
 ---
