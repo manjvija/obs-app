@@ -32,10 +32,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup kubectl
-        with:
-          version: v1.29.0
-
       - name: Deploy to Minikube
         run: |
           kubectl apply --validate=false -f k8s/namespace.yaml
